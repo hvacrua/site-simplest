@@ -1,0 +1,5 @@
+# Environment directory
+/env
+
+# DB SQLite3
+.sqlite3

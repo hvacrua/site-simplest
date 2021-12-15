@@ -1,0 +1,8 @@
+   <div class="features">
+       <h3>Registration form</h3>
+       <form method="POST">
+           {% csrf_token %}
+           {{ form.as_p }}
+           <button type="submit" class="btn btn-warning">Send request</button>
+       </form>
+   </div>
