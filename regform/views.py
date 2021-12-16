@@ -33,7 +33,7 @@ class NewClient(View):
 
             temp_obj[parts[-1]] = language_dict[item]
 
-        print(json.dumps(tree, indent=4))
+        # print(json.dumps(tree, indent=4))
 
         return JsonResponse(tree, json_dumps_params={'indent': 4})
 
@@ -51,6 +51,7 @@ class NewClient(View):
 
 
     def post(self, request, *args, **kwargs):
+
         form = ClientForm(request.POST)
         lang_meta = request.headers.get('mylang', 'en')
 

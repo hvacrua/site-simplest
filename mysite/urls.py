@@ -21,7 +21,7 @@ from regform.views import NewClient
 
 urlpatterns = [
     path('main/', include('main.urls'), name='main'),
-    path('regform/', include('regform.urls'), name='regform'),
+    path('register/', include('regform.urls'), name='regform'),
     path('admin/', admin.site.urls),
     path('', NewClient.as_view()),
     path('send/', NewClient.as_view()),
