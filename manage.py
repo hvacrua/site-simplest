@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# This row of text is written from VM virmach
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
